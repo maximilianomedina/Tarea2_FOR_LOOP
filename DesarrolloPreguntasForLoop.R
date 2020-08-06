@@ -1,3 +1,7 @@
+
+###Nombre: Maximiliano Medina Barrientos
+
+
 ###Desarrollo Preguntas FOR - LOOP
 
 ##Sintesis Enunciado
@@ -23,8 +27,8 @@ print(listaDocumentos)
 ##una estadística de cuántos niños hay por mp.
 
 ##Receta: queremos obtener cuantos niños estan con medidas de protección (mp)
-#y para eso ocuparemos la lista "listaDocumentos".
-
+#y para eso ocuparemos la lista "listaDocumentos". En busca del conteo de mp y  
+#niños les daremos un valor igual a 0.
 length(listaDocumentos)
 niños <- 0
 
@@ -49,7 +53,8 @@ print(paste("se cuentan con",mp,"mp de",niños,"niños"))
 
 ##Receta:
 #Queremos obtener los oficios asociados a los códigos y temáticas de la lista 
-#"listaDocumentos".
+#"listaDocumentos". Para eso buscamos contar los codigos AV que tendran un valor 
+#de 0 para su vector.
 av01<-c()
 av02<-c()
 av03<-c()
@@ -85,6 +90,17 @@ for (CodAsoc in listaDocumentos) {
 }
 
 print(CodAsoc)
+
+
+##Ejercicio3:
+#Construya una función que actúe de juez y retorne aprobada o reprobada
+#para los diferentes oficios, y entregue la cantidad que hay de cada una.
+
+##Receta:
+#Tomare llos parametros meca y ante como los casos aprobados, mientras 
+#que para los reprobados tomare los parametros de dape, arme y ampr.
+#Para lo que necesito hacer un conteo tanto de los oficios como de los 
+#parametros.
 
 of <- 0
 Aprobadas <- 0
